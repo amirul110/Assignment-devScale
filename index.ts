@@ -16,6 +16,7 @@ async function main() {
     const tinggi = Number(await input({message: "masukan tinggi badan"}))
     const bmi = hitungBMI(berat , tinggi)
     console.log("BMI kamu: " + bmi.toFixed(2))
+     console.log(kategoriBMI(bmi))
   } else if (pilihan === "Diskon kalkulator"){
     const harga = Number(await input({ message : "masukan harga"}))
     const persen =Number(await input({message: "masukan diskon"}))
